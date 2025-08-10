@@ -1,0 +1,103 @@
+ARRAY:
+package day5;
+import java.util.Scanner;
+public class arr {
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+			int arr[]=new int[5];
+			arr[0]=5;
+			arr[1]=6;
+			arr[2]=8;
+			arr[3]=7;
+			arr[4]=3;
+			for(int i=0;i<arr.length;i++)
+			{
+				System.out.println(arr[i]);
+			}
+	}
+}
+
+
+EVENARRAY:
+package day5;
+import java.util.Scanner;
+public class evenarr {
+	public static void main(String[] args) {
+				Scanner sc= new Scanner(System.in);
+				int size=sc.nextInt();
+				int arr[]= new int[size];
+				for(int i=0;i<arr.length;i++)
+				{
+					arr[i]=sc.nextInt();
+				}
+				for(int i=0;i<arr.length;i++)
+				{
+					if(i%2==0)
+					{
+						System.out.println(arr[i]);
+					}
+				}
+			}
+		}
+
+
+PALINDROME:
+package day5;
+import java.util.Scanner;
+public class palindrome {
+public static void main(String[] args) {
+			Scanner sc= new Scanner(System.in);
+			int num=sc.nextInt();
+			int rev=0;
+			int temp1=num;
+			while(num>0)
+			{
+				int temp=num%10;
+				rev=rev*10+temp;
+				num=num/10;
+			}
+			if(temp1==rev)
+			{
+				System.err.println("It is a palindrome");
+			}
+			else
+			{
+				System.out.println("Not a palindrome");
+			}
+	}
+}
+
+
+USER ARRAY:
+package day5;
+import java.util.Scanner;
+public class userarr {
+	public static void main(String[] args) {
+				Scanner sc= new Scanner(System.in);
+				int size=sc.nextInt();
+				int arr[]= new int[size];
+				for(int i=0;i<arr.length;i++)
+				{
+					arr[i]=sc.nextInt();
+				}
+				for(int i=0;i<arr.length;i++)
+				{
+					System.out.println(arr[i]);
+				}
+			}
+		}
+
+
+MAX ARRAY:
+public class MaxInArray {
+    public static void main(String[] args) {
+        int[] numbers = {4, 9, 1, 17, 3, 22, 8}; 
+        int max = numbers[0]; 
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+         System.out.println("Maximum value in the array is: " + max);
+    }
+}
