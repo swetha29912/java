@@ -1,0 +1,230 @@
+package day3;
+import java.util.Scanner;
+public class cond {
+	public static void main(String[] args) {
+	      Scanner scanner=new Scanner(System.in);
+	      System.out.println("enter your number:");
+	      int num=scanner.nextInt();
+	        if(num%3==0 && num%5==0)
+	        {
+	        	System.out.println("fizz vizz");
+	        }
+	        else if(num%5==0)
+	        {
+	        	System.out.println("vizz");
+	        }
+	        else
+	        {
+	        	System.out.println("fizz");
+	        }
+}          
+	}
+
+
+DOUBLE:
+import java.util.Scanner;
+public class doub {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your weight:");
+	    int weight= sc.nextInt();
+	         if(weight>=0 && weight<=100)
+	           {
+	    	     System.out.println("valid");
+	             if(weight%2==0)
+	                {
+	        	      System.out.println("YES");
+	        	      System.out.println(weight/2 + " "+ weight/2 );
+	                }
+	             else
+	             {
+	                  System.out.println("NO");
+	             }
+	              }
+	         else
+	           {
+	    	    System.out.println("Invalid");
+	           }
+}
+	}
+
+
+MARK:
+import java.util.Scanner;
+public class mark {
+	public static void main(String[] args) {
+	      Scanner scanner=new Scanner(System.in);
+	      System.out.println("enter your mark:");
+	      int mark=scanner.nextInt();
+	        if(mark>=90 && mark<=100)
+	        {
+	        	System.out.println("A+");
+	        }
+	        else if(mark>=80 && mark<=89)
+	        {
+	        	System.out.println("A");
+	        }
+	        else if(mark>=70 && mark<=79)
+	        {
+	        	System.out.println("B");
+	        }
+	        else if(mark>=60 && mark<=69)
+	        {
+	        	System.out.println("C");
+	        }
+	        else if(mark>=50 && mark<=59)
+	        {
+	        	System.out.println("D");
+	        }
+	        else if(mark<50)
+	        {
+	        	System.out.println("FAIL");
+	        }
+}
+	}
+
+
+NESTED:
+package day3;
+import java.util.Scanner;
+public class nestedif {
+	public static void main(String[] args) {
+		  Scanner scanner=new Scanner(System.in);
+	      System.out.println("enter your age:");
+	      int age=scanner.nextInt();
+	        if(age>=18)
+	        {
+	        	System.out.println("you are eligible to vote");
+	        	if(age>=24)
+	        	{
+	        		System.out.println("you are eligible to candidate");
+	        	}
+	        }
+	        else
+	        {
+	        	System.out.println("you are not eligible to vote");
+	        }
+
+	        }
+}
+
+
+REVERSE:
+package day3;
+public class reverse {
+	public static void main(String[] args) {
+		int num=10;
+		for(int i=num;i>=0;i--)
+		{
+			System.out.println(i);
+		}
+	}
+}
+
+
+STATEMENT:
+package day3;
+import java.util.Scanner;
+public class statement {
+	public static void main(String[] args) {
+		 Scanner scanner=new Scanner(System.in);
+		System.out.println("enter your age:");
+	      int age=scanner.nextInt();
+	        if(age>=18)
+	        {
+	        	System.out.println("you are eligible to vote");
+	        }
+	        else
+	        {
+	        	System.out.println("you are not eligible to vote");
+	        }
+}
+	}
+
+
+SWAPPING WITHOUT TEMP:
+package day3;
+import java.util.Scanner;
+public class SWAP {
+	public static void main(String[] args) {
+				 Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter first number (a): ");
+	        int a = sc.nextInt();
+	        System.out.print("Enter second number (b): ");
+	        int b = sc.nextInt();
+	        System.out.println("Before Swapping: a = " + a + ", b = " +b);
+	        a = a ^ b;  
+	        b = a ^ b;  
+	        a = a ^ b;
+	        System.out.println("After Swapping: a = " + a + ", b = " + b);
+	        sc.close();
+	    }
+}
+
+
+SWAPPING USING TEMP:
+package day3;
+
+import java.util.Scanner;
+public class Swaping {
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+	        System.out.println("enter first number:");
+	        int num1 = sc.nextInt();
+	        System.out.println("enter second number:");
+	        int num2 = sc.nextInt();
+	        System.out.println("before swapping:");
+	        System.out.println("number 1:" + num1);
+	        System.out.println("number 2:" + num2);
+	        int temp = num1;
+	        num1 = num2;
+	        num2 = temp;
+	        System.out.println("after swapping:");
+	        System.out.println("number 1:" + num1);
+	        System.out.println("number 2:" + num2);
+	        sc.close();
+}
+	}
+
+
+SWITCH:
+package day3;
+public class switc {
+   public static void main(String[] args) {
+		int num=8;
+		switch(num) {
+		case 0:
+		{
+			System.out.println("sunday");
+		}
+		case 1:
+		{
+			System.out.println("monday");
+		}
+		case 2:
+		{
+			System.out.println("tuesday");
+		}
+		case 3:
+		{
+			System.out.println("wednesday");
+		}
+		case 4:
+		{
+			System.out.println("thursday");
+	    }
+		default:
+		{
+			System.out.println("nothing");
+		}
+		case 5:
+		{
+			System.out.println("friday");
+		}
+		case 6:
+		{
+			System.out.println("saturday");
+		}
+				}
+	}
+
