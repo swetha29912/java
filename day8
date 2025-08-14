@@ -1,0 +1,224 @@
+CONSTRUCTOR:
+
+package assessmentday8;
+
+public class constructor {
+		int age;
+		String name;
+		constructor(int a, String str)
+		{
+			age=a;
+			name=str;
+			System.out.println("Happy brithday!");
+		}
+		void display()
+		{
+			System.out.println(age +""+ name);
+		}
+		public static void main(String[] args)
+		{
+			constructor obj=new constructor (23,"dhanush");
+			obj.display();
+		}
+	}
+
+CONSTRUCTOROVERLOADING:
+
+package assessmentday8;
+
+public class constructoroverloading {
+		int age;
+		String name;
+		constructoroverloading(int a, String str)
+		{
+			age=a;
+			name=str;
+			System.out.println("Happy brithda!");
+		}
+		void display()
+		{
+			System.out.println(age +""+ name);
+		}
+		constructoroverloading(float b)
+		{
+			System.out.println(b);
+		}
+
+		public static void main(String[] args)
+		{
+			{
+				constructor obj=new constructor (19,"T");
+				obj.display();
+			}
+
+		}}   
+
+EMPLTOYEEDETAILS:
+
+package assessmentday8;
+
+public class empolyeedetails {
+    int empolyeeno = 111;
+    String name = "dhanush";
+    static String companyname = "hebesec";
+    
+    void display(int a, String name)
+	{
+		System.out.println(a+" "+name+" "+companyname);
+	}
+
+	public static void main(String[] args) {
+		 empolyeedetails obj = new empolyeedetails();
+		    System.out.println(obj.empolyeeno);
+			System.out.println(empolyeedetails.companyname);
+		    empolyeedetails.companyname= "hebesec";	
+		    obj.display(111, "thirishika");
+		    obj.display(112, "dhanush");
+	}
+}
+
+TRIP:
+
+public class oopswork {
+		String triporganiser= "thirishika";
+		String tripplace= "wayanad";
+		int  budget =20000;
+		String sponser = "Swetha";
+		String hotel =" Taj"
+
+		public static void main(String[] args) 
+		{
+			oopswork obj=new oopswork();
+			System.out.println("obj.triporganiser");
+			oopswork obj1=new oopswork();
+			System.out.println(obj.tripplace);
+			oopswork obj2=new oopswork();
+			System.out.println(obj1.budget);
+			obj.triporganiser="thirishika";
+			obj.budget=20000;
+			obj.hotel="Taj";
+			System.out.println(obj.triporganiser);
+			System.out.println(obj.budget);
+			System.out.println(obj.hotel);		
+		}
+
+	}
+
+OOPS:
+
+package assessmentday8;
+
+public class opps {
+		String hotel= "Maran";
+		String food= "parrotta";
+		int price = 20;	
+
+		public static void main(String[] args) 
+		{
+			opps obj=new opps();
+			System.out.println(obj.hotel);
+			opps obj1 =new opps();
+			System.out.println(obj1.price);
+			obj1.price=50;
+			obj1.hotel="Maran";
+			System.out.println(obj.price);
+			System.out.println(obj.hotel);	
+		}
+
+	}
+
+STATICBLOCK:
+
+package assessmentday8;
+
+public class staticblock {
+static
+{
+	System.out.println("dhanush");
+}
+	public static void main(String[] args) {
+		System.out.println("Nice to meet you!");
+	}
+
+}
+
+STATICMETHOD:
+
+package assessmentday8;
+
+public class staticmethod {
+		int rollno =1;
+		String name ="dhanush";
+		static String collegename ="zion";
+		 
+		void display(int a, String name)
+		{
+			System.out.println(a+" "+ name+""+collegename);
+		}
+		 public static void show(int a)
+		 {
+			 staticvariable.collegename=" Mount zion";
+			 System.out.println(a+ ""+collegename);
+		 }
+		
+		public static void main(String[] args) 
+		{
+			
+			staticmethod.show(1);
+			staticvariable obj=new staticvariable();
+			obj.display(1,"dhanush");
+			
+		}
+
+	}
+
+STATICVARIABLE:
+
+package assessmentday8;
+
+public class staticvariable {
+	int rollno = 100;
+	String name = "thirishika";
+	static String collegename = "mountzion";
+	
+	void display(int a, String name)
+	{
+		System.out.println(a+" "+name+" "+collegename);
+	}
+
+	public static void main(String[] args) {
+	    staticvariable obj = new staticvariable();
+	    System.out.println(obj.rollno);
+		System.out.println(staticvariable.collegename);
+	    staticvariable.collegename= "mountzion";	
+        obj.display(100, "thirishika");
+	    obj.display(101, "swetha");
+	    obj.display(102,"shahana");
+	    obj.display(103,"haripriya");
+	    obj.display(104,"abi");
+	    
+	}
+
+}
+
+UPDATEVARIABLE:
+
+package assessmentday8;
+
+public class updatevariable {
+		int rollno=55;
+		String name="Akash";
+		static String college="zion";
+		
+		void display(int a,String name)
+		{
+			System.out.println(a + " "+ name +" " + college + " ");
+		}
+		public static void main(String[] args) {
+			updatevariable obj = new updatevariable();
+			System.out.println(obj.rollno);
+			System.out.println(updatevariable.college);
+			updatevariable.college=("zoho");
+			obj.display(55, "Akash");	
+		}
+}
