@@ -1,0 +1,88 @@
+STRING:
+package day7;
+public class str {
+	public static void main(String[] args) {
+		char ch='c';
+		char ch1=(char)(ch-32);
+		System.out.println(ch1);
+	}
+}
+
+
+STRING BF:
+package day7;
+import java.lang.String;
+public class strbf {
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("hello world");
+        System.out.println(sb);		
+        sb.append(",World!");
+        System.out.println(sb);
+        sb.insert(5,"java");
+        System.out.println(sb);
+        sb.delete(5, 10);
+            System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb);
+        sb.replace(0, 3, "AA");
+        System.out.println(sb);
+             }
+}
+
+
+STR:
+package day7;
+import java.lang.String;
+public class string {
+	public static void main(String[] args) {
+		String str="priya priya ";
+		String str1="priya";
+	    String str2=new String("blue");
+	    String str3=new String("blueMatics");
+	    System.out.println(str==str1);
+		System.out.println(str.equals(str3));
+		System.out.println(str.equalsIgnoreCase(str2));
+		System.out.println(str.length());
+		System.out.println(str);
+		System.out.println(str.trim().length());
+		System.out.println(str.length());
+	    String word[]=str.split(" ");
+	    for(String var:word)
+	    {
+	    	System.out.println(var);
+	    }
+	    System.out.println(str3.substring(5));
+	    System.out.println(str3.contains("pri"));
+	    System.out.println(str3.endsWith("cs"));
+	    System.out.println(str3.charAt(3));
+	    System.out.println(str3.concat("gether"));
+	   	}
+}
+
+
+STR REV:
+package day7;
+public class strrev {
+	public static void main(String[] args) {
+					StringBuffer sb=new StringBuffer("hello world");
+	        System.out.println(sb);	
+	        sb.reverse();
+	        System.out.println(sb);
+	       }
+}
+
+
+SUM OF DIGIT:
+package day7;
+public class sumofdigit {
+		public String display()
+	{
+		String name="Ajmal";
+		return name;
+	}
+public static void main(String[] args) {
+		sumofdigit obj=new sumofdigit();
+		String res=obj.display();
+		System.out.println(res);
+	}
+}
